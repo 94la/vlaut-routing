@@ -1,0 +1,35 @@
+{
+  "Name": "влаут — реклама и RU direct",
+  "GlobalProxy": "true",
+  "UseChunkFiles": "false",
+  "RemoteDNSType": "DoH",
+  "RemoteDNSDomain": "https://1.1.1.1/dns-query",
+  "RemoteDNSIP": "1.1.1.1",
+  "DomesticDNSType": "DoU",
+  "DomesticDNSIP": "77.88.8.8",
+  "DomesticDNSDomain": "",
+  "Geositeurl": "https://raw.githubusercontent.com/94la/vlaut-routing/main/geosite.dat?v=df86baa97e82",
+  "Geoipurl": "https://raw.githubusercontent.com/94la/vlaut-routing/main/geoip.dat?v=8a6086c7e27f",
+  "LastUpdated": "1793355509",
+  "RouteOrder": "block-proxy-direct",
+  "DnsHosts": {
+    "one.one.one.one": "1.1.1.1"
+  },
+  "DirectSites": [
+    "geosite:wlout-direct"
+  ],
+  "DirectIp": [
+    "geoip:wlout-direct"
+  ],
+  "ProxySites": [
+    "geosite:wlout-proxy"
+  ],
+  "ProxyIp": [],
+  "BlockSites": [
+    "geosite:wlout-ads",
+    "geosite:category-ads"
+  ],
+  "BlockIp": [],
+  "DomainStrategy": "IPIfNonMatch",
+  "FakeDNS": "false"
+}

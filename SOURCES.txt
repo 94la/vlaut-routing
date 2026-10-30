@@ -1,0 +1,11 @@
+Routing data sources and exact checksums: manifest.json
+RoscomVPN: https://github.com/hydraponique/roscomvpn-geosite and https://github.com/hydraponique/roscomvpn-geoip
+Ads: Loyalsoldier/v2ray-rules-dat category-ads-all (GPL-3.0), original sources https://github.com/Loyalsoldier/v2ray-rules-dat
+Reproducible builder: scripts/update_lists.py
+
+Additional source snapshots, SHA256, authors/licenses: source-snapshots/manifest.json and README.md
+Domain-only derived data: imported-domains.txt; converter scripts/extend_blocklists.py
+
+Attribution: The EasyList authors (https://easylist.to/); uBlock Origin/uAssets contributors; AdGuard filter authors; Peter Lowe (https://pgl.yoyo.org/adservers/).
+
+Local routing policy inputs: policy-inputs.json; compiler: scripts/build_policy_categories.py

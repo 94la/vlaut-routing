@@ -1,0 +1,120 @@
+{
+  "sources": [
+    {
+      "repository": "hydraponique/roscomvpn-geosite",
+      "version": "202610120948",
+      "asset": "geosite.dat",
+      "sha256": "6fadc9298116c5523b1e3cfa46c6c5fed5a218b9b6365be831e358f4823ea464",
+      "source": "https://github.com/hydraponique/roscomvpn-geosite/releases/download/202610120948/geosite.dat"
+    },
+    {
+      "repository": "hydraponique/roscomvpn-geoip",
+      "version": "202610280934",
+      "asset": "geoip.dat",
+      "sha256": "4d9433c2fb6ad2da121ebc5f76d7e1368f899a3c596110c94444e034167d6dcb",
+      "source": "https://github.com/hydraponique/roscomvpn-geoip/releases/download/202610280934/geoip.dat"
+    },
+    {
+      "repository": "Loyalsoldier/v2ray-rules-dat",
+      "version": "202610272204",
+      "asset": "geosite.dat",
+      "sha256": "206a76398c53cec2c84f96c5027b6f29ee8c03f3337fc2e4a7112c554fdb7ec5",
+      "source": "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/202610272204/geosite.dat"
+    }
+  ],
+  "derived_category": "WLOUT-ADS from Loyalsoldier category-ads-all",
+  "geosite_sha256": "df86baa97e828caa4337e497b27e22fafb456e0b54ad8c2c1b7fca4181370f27",
+  "geoip_sha256": "8a6086c7e27f304bbfc85e7ff18d7a990b2723545a1a09e35b56f45816fbfae0",
+  "domain_import": {
+    "sources": [
+      {
+        "name": "easylist",
+        "url": "https://raw.githubusercontent.com/easylist/easylist/gh-pages/easylist.txt",
+        "kind": "abp",
+        "license": "GPL-3.0-or-later",
+        "file": "easylist.txt.gz",
+        "sha256": "ad27e0c72b3563e6be2d9da9beecc3ffe3f7b41bf386c5341ac026a9db7dfa67"
+      },
+      {
+        "name": "easyprivacy",
+        "url": "https://raw.githubusercontent.com/easylist/easylist/gh-pages/easyprivacy.txt",
+        "kind": "abp",
+        "license": "GPL-3.0-or-later",
+        "file": "easyprivacy.txt.gz",
+        "sha256": "82ce0e1cff9c1ed757fcbb22fec7dc213b92bbe89c5a5ca2a31585e4505920b8"
+      },
+      {
+        "name": "peter-lowe",
+        "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
+        "kind": "hosts",
+        "license": "author permits combination and web redistribution: https://pgl.yoyo.org/adservers/",
+        "file": "peter-lowe.txt.gz",
+        "sha256": "34f2af37f9e1cc147c1a5a17548c9e8cc795d8e87736018dba67e3f6a2b681e4"
+      },
+      {
+        "name": "ublock",
+        "url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
+        "kind": "abp",
+        "license": "GPL-3.0",
+        "file": "ublock.txt.gz",
+        "sha256": "118d32ee30089ed3b8cecb30e63eb884bfd138dabd10d51fb3edcc8ef8acdad0"
+      },
+      {
+        "name": "privacy",
+        "url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt",
+        "kind": "abp",
+        "license": "GPL-3.0",
+        "file": "privacy.txt.gz",
+        "sha256": "7e8fd50fc0a2064dc1b308225a8de579fae47435aece21d1c76687b95d6e4f55"
+      },
+      {
+        "name": "badware",
+        "url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
+        "kind": "abp",
+        "license": "GPL-3.0",
+        "file": "badware.txt.gz",
+        "sha256": "153b6c919468af3f0c79defd43ce4dd7ab2b3a6c5f98b591b7c7762adb60c2dc"
+      },
+      {
+        "name": "urlhaus",
+        "url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/thirdparties/urlhaus-filter/urlhaus-filter-online.txt",
+        "kind": "malware",
+        "license": "CC0-1.0 https://gitlab.com/malware-filter/urlhaus-filter#license",
+        "file": "urlhaus.txt.gz",
+        "sha256": "68516d77bf520dcc5a5cf398bd8b3c717fa6c05ccf78b646881142e08fc416a6"
+      },
+      {
+        "name": "mobile",
+        "url": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt",
+        "kind": "abp",
+        "license": "GPL-3.0",
+        "file": "mobile.txt.gz",
+        "sha256": "4a72f372e8063f2bb5c44ac05ab2e64755a89320a39bf5a87857aabf7bfe5c5d"
+      }
+    ],
+    "eligible_per_source": {
+      "easylist": 41481,
+      "easyprivacy": 43291,
+      "peter-lowe": 3567,
+      "ublock": 43,
+      "privacy": 88,
+      "badware": 1172,
+      "urlhaus": 565,
+      "mobile": 926
+    },
+    "exception_or_protected_removed": 2223,
+    "deduplicated_import_domains": 87515,
+    "new_geosite_entries": 12982,
+    "policy": "unconditional whole-domain only; conditional branches and scoped rules skipped; host exceptions conservatively excluded; IPs skipped"
+  },
+  "policy_categories": {
+    "geosite": [
+      "WLOUT-DIRECT",
+      "WLOUT-PROXY"
+    ],
+    "geoip": [
+      "WLOUT-DIRECT"
+    ],
+    "source": "policy-inputs.json"
+  }
+}

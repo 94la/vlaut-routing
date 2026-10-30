@@ -1,0 +1,48 @@
+{
+  "DirectSites": [
+    "geosite:whitelist",
+    "geosite:category-ru",
+    "regexp:.*\\.ru$",
+    "regexp:.*\\.su$",
+    "regexp:.*\\.xn--p1ai$",
+    "domain:ozon.app",
+    "domain:ozonusercontent.com",
+    "domain:yandex.net",
+    "domain:yastatic.net",
+    "domain:yandex.com",
+    "domain:vk.com",
+    "domain:vk-cdn.net",
+    "domain:userapi.com",
+    "domain:vkuservideo.net",
+    "domain:mycdn.me",
+    "domain:mradx.net",
+    "domain:avito.st",
+    "domain:2gis.com",
+    "domain:gismeteo.net",
+    "domain:amocrm.com",
+    "domain:amocrm.com.ua",
+    "domain:yandexcloud.net",
+    "domain:softphone.pro",
+    "domain:animego.me"
+  ],
+  "DirectIp": [
+    "10.0.0.0/8",
+    "172.16.0.0/12",
+    "192.168.0.0/16",
+    "127.0.0.0/8",
+    "100.64.0.0/10",
+    "169.254.0.0/16",
+    "::1/128",
+    "fc00::/7",
+    "fe80::/10",
+    "geoip:private",
+    "geoip:direct"
+  ],
+  "ProxySites": [
+    "domain:googlevideo.com",
+    "geosite:youtube",
+    "geosite:telegram",
+    "geosite:github",
+    "geosite:google-play"
+  ]
+}
